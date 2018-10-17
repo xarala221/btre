@@ -131,6 +131,7 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-
+/media
+/static
 
 # End of https://www.gitignore.io/api/django
