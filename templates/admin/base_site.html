@@ -1,0 +1,23 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block branding %}
+  <h1 id="head">
+    <img src="{% static 'img/logo.png' %}" alt="BT Real Estate" class="brand_img" height="50" width="80"> Admin Area
+  </h1>
+{% endblock %}
+{% block extrastyle %}
+  <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
+{% block usertools %}
+<div id="user-tools">         
+  Bienvenue,
+  <strong>{{ user }}</strong>.
+
+      <a href="/">Visiter le site</a> /
+  <a href="/admin/password_change/">Changez votre mot de passe</a> /
+  
+  <a href="/admin/logout/">Deconnexion</a>
+
+</div>
+{% endblock %}
