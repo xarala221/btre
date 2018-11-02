@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load humanize %}
+{% block title  %} | Browse property listings {% endblock %}
 {% block content %}
 
   <section id="showcase-inner" class="py-5 text-white">
@@ -33,7 +34,6 @@
     <div class="container">
       <div class="row">
       {% if listings %}
-
         {% for listing in listings %}
         <!-- Listing 1 -->
         <div class="col-md-6 col-lg-4 mb-4">
@@ -83,9 +83,6 @@
         <p>No listing available</p>
       </div>
       {% endif %}
-       
-
-
       </div>
 
       <div class="row">
@@ -109,7 +106,7 @@
                   </li>
                 {% else %}
                   <li class="page-item">
-                    <a href="?page{{ i }}" class="page-link">{{ i }}</a>
+                    <a href="?page={{ i }}" class="page-link">{{ i }}</a>
                   </li>
                 {% endif %}
               {% endfor %}
