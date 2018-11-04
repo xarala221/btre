@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     #myapp
     'accounts',
+    'contacts',
     'pages',
     'listings',
     'realtors',
